@@ -468,6 +468,10 @@ ul.horizontal li {
     color: #FFFFFF;
 }
 
+#recent_tag {
+    text-decoration: none;
+}
+
 .horizontal_divs {
     display: flex;
     flex-direction: row;
@@ -555,6 +559,12 @@ ul.horizontal li {
 
 /*NIGHTMODE PAGE*/
 #crying_dog {
+    display: flex;
+    justify-content: center;
+}
+
+/*NIGHTMODE PAGE*/
+#manga_cover {
     display: flex;
     justify-content: center;
 }
