@@ -120,7 +120,7 @@ function App() {
 
                     <div className="horizontal_divs">
                         <div className="Manga_Card_Border">
-                            <img className="covers" src="img/manga_covers/mob_psycho_cover.png" alt="Mob Psycho 100 Vol 1. Cover"/>
+                            <img className="covers" src="/img/manga_covers/mob_psycho_cover.png" alt="Mob Psycho 100 Vol 1. Cover"/>
                                 <div className="manga_title_chapters">
                                     <h2>Mob Psycho 100</h2>
                                     <p>Chapter 125</p>
@@ -130,7 +130,7 @@ function App() {
                         </div>
 
                         <div className="Manga_Card_Border">
-                            <img className="covers" src="img/manga_covers/jjk_cover.png" alt="Jujutsu Kaisen Vol 1. Cover"/>
+                            <img className="covers" src="/img/manga_covers/jjk_cover.png" alt="Jujutsu Kaisen Vol 1. Cover"/>
                                 <div className="manga_title_chapters">
                                     <h2>Jujutsu Kaisen</h2>
                                     <p>Chapter 156</p>
@@ -140,7 +140,7 @@ function App() {
                         </div>
 
                         <div className="Manga_Card_Border">
-                            <img className="covers" src="img/manga_covers/haikyuu.jpg" alt="Haikyuu Vol 1. Cover"/>
+                            <img className="covers" src="/img/manga_covers/haikyuu.jpg" alt="Haikyuu Vol 1. Cover"/>
                                 <div className="manga_title_chapters">
                                     <h2>Haikyuu</h2>
                                     <p>Chapter 312</p>
@@ -152,7 +152,7 @@ function App() {
 
                     <div className="horizontal_divs">
                         <div className="Manga_Card_Border">
-                            <img className="covers" src="img/manga_covers/onepiece_cover.jpeg" alt="One Piece Vol 1. Cover"/>
+                            <img className="covers" src="/img/manga_covers/onepiece_cover.jpeg" alt="One Piece Vol 1. Cover"/>
                                 <div className="manga_title_chapters">
                                     <h2>One Piece</h2>
                                     <p>Chapter 1062</p>
@@ -162,7 +162,7 @@ function App() {
                         </div>
 
                         <div className="Manga_Card_Border">
-                            <img className="covers" src="img/manga_covers/bakuman_cover.jpeg" alt="Jujutsu Kaisen Vol 1. Cover"/>
+                            <img className="covers" src="/img/manga_covers/bakuman_cover.jpeg" alt="Jujutsu Kaisen Vol 1. Cover"/>
                                 <div className="manga_title_chapters">
                                     <h2>Bakuman</h2>
                                     <p>Chapter 156</p>
@@ -172,7 +172,7 @@ function App() {
                         </div>
 
                         <div className="Manga_Card_Border">
-                            <img className="covers" src="img/manga_covers/demon_slayer_cover.jpeg" alt="Haikyuu Vol 1. Cover"/>
+                            <img className="covers" src="/img/manga_covers/demon_slayer_cover.jpeg" alt="Haikyuu Vol 1. Cover"/>
                                 <div className="manga_title_chapters">
                                     <h2>Demon Slayer</h2>
                                     <p>Chapter 312</p>
@@ -184,7 +184,7 @@ function App() {
 
                     <div className="horizontal_divs">
                         <div className="Manga_Card_Border">
-                            <img className="covers" src="img/manga_covers/naruto_cover" alt="Mob Psycho 100 Vol 1. Cover"/>
+                            <img className="covers" src="/img/manga_covers/naruto_cover" alt="Mob Psycho 100 Vol 1. Cover"/>
                                 <div className="manga_title_chapters">
                                     <h2>Naruto</h2>
                                     <p>Chapter 125</p>
@@ -194,7 +194,7 @@ function App() {
                         </div>
 
                         <div className="Manga_Card_Border">
-                            <img className="covers" src="img/manga_covers/trigun_cover.jpeg" alt="Jujutsu Kaisen Vol 1. Cover"/>
+                            <img className="covers" src="/img/manga_covers/trigun_cover.jpeg" alt="Jujutsu Kaisen Vol 1. Cover"/>
                                 <div className="manga_title_chapters">
                                     <h2>Trigun</h2>
                                     <p>Chapter 156</p>
@@ -204,7 +204,7 @@ function App() {
                         </div>
 
                         <div className="Manga_Card_Border">
-                            <img className="covers" src="img/manga_covers/noragami_cover.jpeg" alt="Haikyuu Vol 1. Cover"/>
+                            <img className="covers" src="/img/manga_covers/noragami_cover.jpeg" alt="Haikyuu Vol 1. Cover"/>
                                 <div className="manga_title_chapters">
                                     <h2>Noragami</h2>
                                     <p>Chapter 312</p>
