@@ -17,7 +17,6 @@ export default function Menu() {
                     <ul className="horizontal">
                         <li><a id="Home" href="../../public/index.html">Home</a></li>
                         <li><a id="Recent" href="recently_updated.html">Recently Updated</a></li>
-                        <li><a id="Trending" href="trending.html">Trending</a></li>
                     </ul>
                 </div>
             </div>
