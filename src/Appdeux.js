@@ -1,7 +1,7 @@
 import "./App.css";
 import Menu from "./components/Menu";
 
-function App() {
+const Appdeux = () => {
     return (
         <div className="App">
             <Menu />
@@ -9,7 +9,7 @@ function App() {
             <div className="body">
                 <div className="Top_Chapters_Box">
                     <div className="Top_Chapters">
-                        <a id="trending_tag" href="trending.html"><h2>Trending this Week</h2></a>
+                        
                     </div>
                 </div>
 
@@ -219,4 +219,4 @@ function App() {
     );
 }
 
-export default App;
+export default Appdeux;
