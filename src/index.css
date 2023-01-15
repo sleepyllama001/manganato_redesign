@@ -1,16 +1,16 @@
 h1 {
     font-weight: 400;
     font-size: 4vw;
-    font-family: 'Patrick Hand';
+    font-family: 'Patrick Hand', serif;
 }
 h2 {
     font-weight: 400;
     font-size: 2vw;
-    font-family: 'Patrick Hand';
+    font-family: 'Patrick Hand', serif;
 }
 p {
     font-size: 2vmin;
-    font-family: 'Patrick Hand';
+    font-family: 'Patrick Hand', serif;
 }
 
 /* TOP CHAPTERS */

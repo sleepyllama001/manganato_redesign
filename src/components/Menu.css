@@ -96,7 +96,7 @@ ul.horizontal li {
     color: #FFFFFF;
 
     font-size: 2vw;
-    font-family: 'Patrick Hand';
+    font-family: 'Patrick Hand', serif;
     padding: 1vh 1.5vw;
 }
 /*      LOGIN REGISTER*/
@@ -117,11 +117,10 @@ ul.horizontal li {
     display: flex;
     align-items: center;
 }
-
 #login:hover {
     /* Navy05 */
     background: #5A6D85;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
 
@@ -131,11 +130,10 @@ ul.horizontal li {
     display: flex;
     align-items: center;
 }
-
 #register:hover {
     /* Navy05 */
     background: #5A6D85;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     height: 6vh;
 }
@@ -166,11 +164,10 @@ ul.horizontal li {
     display: flex;
     align-items: center;
 }
-
 #night-mode:hover {
     /* Navy05 */
     background: #46AFAF;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     height: 6vh;
 }
