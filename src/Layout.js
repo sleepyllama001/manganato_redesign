@@ -11,6 +11,9 @@ const Layout = () => {
           <li>
             <Link to="/chapter">Chapter</Link>
           </li>
+          <li>
+            <Link to ="/bookdesc">Book Description</Link>
+          </li>
         </ul>
       </nav>
 

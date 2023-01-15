@@ -7,6 +7,7 @@ import Chapter from "./Chapter";
 import Login from "./Login";
 import Appdeux from "./Appdeux"
 import NoPage from "./NoPage";
+import Bookdesc from "./Bookdesc";
 
 export default function Appp() {
     return (
@@ -17,6 +18,7 @@ export default function Appp() {
             {/* <Route path="login" element={<Login />} /> */}
             <Route index element={<Appdeux />} />
             <Route path="chapter" element={<Chapter />} />
+            <Route path="Bookdesc" element={<Bookdesc/>} />
             <Route path="login" element={<Login />} />
             <Route path="*" element={<NoPage />} />
           </Route>
