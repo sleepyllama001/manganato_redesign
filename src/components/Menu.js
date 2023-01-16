@@ -18,8 +18,7 @@ export default function Menu() {
                 <div className="border_box">
                     <ul className="horizontal">
                         <li><a id="Home" href="../../public/index.html">Home</a></li>
-                        <li><a id="Recent" href="../../public/recently_updated.html">Recently Updated</a></li>
-                        <li><a id="Trending" href="../../public/trending.html">Trending</a></li>
+                        <li><a id="Recent" href="recently_updated.html">Recently Updated</a></li>
                     </ul>
                 </div>
             </div>

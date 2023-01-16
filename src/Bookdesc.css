@@ -1,0 +1,104 @@
+.container{
+    display: grid;
+    grid-template-columns: [first] 10% [second] 55% [third] 5% [fourth] 25% [fifth] 5%;
+}
+
+.subcontainer_book{
+    display: grid;
+    grid-template-rows: [first] 10% [second] 70% [third] 20%;
+    grid-template-columns: [colone] 40% [coltwo] 60%;
+    border-color: black;
+    border-radius: 1px;
+    border-style: dotted;
+}
+
+.book_pic{
+    display: block;
+    grid-row-start: second;
+    grid-row-end: third;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    grid-column-start: colone;
+    grid-column-end: coltwo;
+    
+}
+
+.book_stars{
+    display: grid;
+    grid-row-start: first;
+    grid-row-end: second;
+    max-width: 70%;
+    max-height: 60%;
+    margin-left: 70px;
+}
+
+.book_pic img {
+    width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.subsubcontainer_book{
+    display: grid;
+
+}
+
+.book_text {
+    grid-row-start: second;
+    grid-row-end: third;
+
+    grid-column-start: coltwo;
+    /* grid-column-end: coltwo; */
+}
+.book_categories {
+    grid-row-start: third;
+    /* grid-row-end: third; */
+
+    grid-column-start: coltwo;
+    /* grid-column-end: coltwo; */
+}
+
+.bookmark_button {
+    border-style: solid;
+    border-color: black;
+    color: #072448;
+    border-radius: 10px;
+
+    grid-row-start: rowtwo;
+    /* grid-row-end: third; */
+
+    grid-column-start: second;
+    /* grid-column-end: coltwo; */
+    text-align: center;
+    /* margin-top: 15%; */
+    padding-top: 12%;
+}
+.status_button {
+    border-style: solid;
+    border-color: black;
+    color: #072448;
+    border-radius: 10px;
+
+    grid-row-start: rowtwo;
+    /* grid-row-end: third; */
+
+    grid-column-start: fourth;
+    /* grid-column-end: coltwo; */
+    text-align: center;
+    /* margin-top: 15%; */
+    padding-top: 12%;
+}
+
+.button_grid {
+    grid-row-start: third;
+    /* grid-row-end: third; */
+
+    grid-column-start: colone;
+    /* grid-column-end: coltwo; */
+    display: grid;
+
+ 
+    grid-template-rows: [rowone] 30% [rowtwo] 40% [rowthree] 30%;
+    grid-template-columns: [first] 5% [second] 40% [third] 10% [fourth] 40% [fifth] 5%;;
+}
