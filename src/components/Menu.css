@@ -113,6 +113,9 @@ ul.horizontal li {
 
 #login {
     text-decoration: none;
+    background: #072448;
+    border: 0 solid #072448;
+    border-radius: 10px;
     height: 6vh;
     display: flex;
     align-items: center;
@@ -124,8 +127,39 @@ ul.horizontal li {
     border-radius: 10px;
 }
 
+.ModalContent {
+    width: 40vw;
+    height: 80vh;
+}
+
+.Heading {
+
+}
+
+/* Close button */
+.close {
+    color: #fff;
+    background-color: #ff0000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 15px;
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
 #register {
     text-decoration: none;
+    background: #072448;
+    border: 0 solid #072448;
+    border-radius: 10px;
     height: 6vh;
     display: flex;
     align-items: center;

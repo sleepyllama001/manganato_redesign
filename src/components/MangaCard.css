@@ -1,0 +1,21 @@
+.Manga_Card_Border {
+    width: 28vw;
+    height: 30vh;
+    /* Pochita01 */
+    background: #FFDFDC;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.covers {
+    width: 10vw;
+    height: 28vh;
+    padding-left: 2vw;
+    padding-top: 1vh;
+}
+
+.manga_title_chapters {
+    padding-left: 2vw;
+}
