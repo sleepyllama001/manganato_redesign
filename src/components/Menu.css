@@ -127,32 +127,106 @@ ul.horizontal li {
     border-radius: 10px;
 }
 
+.ModalBody {
+    width: 40vw;
+    height: 90vh;
+    position: relative;
+    background-color: #FFDFDC;
+    border: 5px solid #072448;
+    border-radius: 5px;
+}
+
 .ModalContent {
     width: 40vw;
-    height: 80vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .Heading {
-
+    display: flex;
+    justify-content: center;
 }
 
-/* Close button */
-.close {
-    color: #fff;
-    background-color: #ff0000;
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 15px;
+#imgBox {
+    display: flex;
+    justify-content: center;
+}
+
+.imgcontainer {
+    text-align: center;
+    overflow: hidden;
     border-radius: 50%;
-    border: 2px solid #333;
+    height: 25vh;
 }
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
+
+img.avatar {
+    max-height: inherit;
+    width: auto;
+}
+
+.loginRegisterContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vw;
+}
+
+.loginRegisterButton {
+    background-color: #072448;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
     cursor: pointer;
-    outline: none;
+    width: 100%;
+    font-size: 2.4vmin;
+    font-family: 'Patrick Hand', serif;
+}
+/* set a hover effect for the button*/
+
+.loginRegisterButton:hover {
+    opacity: 0.8;
+    background-color: #46AFAF;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 2.4vmin;
+    font-family: 'Patrick Hand', serif;
+}
+
+.cancelBtn {
+    margin-left: 2vw;
+    height: 5vh;
+    width: 10vw;
+    background-color: white;
+    border: 1px solid #072448;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 2vw;
+    font-family: 'Patrick Hand', serif;
+    color: #072448;
+}
+
+.cancelBtn:hover {
+    opacity: 0.8;
+    background-color: #CDD3DA;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+#psw {
+    font-size: 2.4vmin;
+    font-family: 'Patrick Hand', serif;
+    margin-right: 2vw;
 }
 
 #register {
@@ -170,6 +244,10 @@ ul.horizontal li {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     height: 6vh;
+}
+
+#profilPic {
+
 }
 
 .login_register {
