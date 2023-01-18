@@ -46,10 +46,6 @@ p {
     height: 60vh;
 }
 
-.cover {
-    overflow: hidden;
-}
-
 .manga_poster_img {
     position: absolute;
     overflow: hidden;
@@ -58,7 +54,6 @@ p {
     height: 60vh;
     filter: blur(6px);
     opacity: .8;
-    z-index: 1;
 }
 
 
@@ -143,7 +138,6 @@ p {
 }
 
 .border_vol_cover {
-    z-index: 2;
     background: #C6F0F0;
     border-radius: 20px;
     width: 23vw;
@@ -160,11 +154,11 @@ p {
 
 .padding_right_arrow {
     padding-left: 2vw;
-    z-index: 2;
+    z-index: 1;
 }
 
 .padding_left_arrow {
-    z-index: 2;
+    z-index: 1;
 }
 
 .arrow_box {
