@@ -6,6 +6,7 @@ import "./index.css"
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import MangaCard from "./components/MangaCard";
+import TrendingSlideShow from "./components/TrendingSlideShow"
 
 // Data
 import mangaData from "./assets/MangaInfo.json";
@@ -29,14 +30,9 @@ export default function Appp() {
     return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
-             <Route index element={<App />} />
-            {/* <Route path="login" element={<Login />} /> */}
+            <Route index element={<App />} />
             <Route path="chapter" element={<Chapter />} />
             <Route path="Bookdesc" element={<Bookdesc/>} />
-            <Route path="login" element={<Login />} />
-            <Route path="*" element={<NoPage />} />
-          </Route>
         </Routes>
       </BrowserRouter>
     );
@@ -54,84 +50,7 @@ function App() {
                     </div>
                 </div>
 
-                <div className="title_chapter_description_box">
-                    <a className="cover" href="../public/manga_page.html">
-                        <img className="manga_poster_img" src="img/manga_covers/chainsaw_man.jpg" alt="chainsaw man vol 1. cover"/>
-                    </a>
-
-                    <div className="horizontal_div">
-                        <div className="padding_left_arrow">
-                            <div className="arrow_box">
-                                <img className="arrow" src="img/icons/left_arrow.png" alt="left_arrow"/>
-                            </div>
-                        </div>
-
-                        <div className="manga_info">
-                            <div className="padding">
-                                <div className="Border">
-                                    <div className="Title">
-                                        <h1>Chainsaw Man</h1>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="padding">
-                                <div className="Border" id="Chapter">
-                                    <div className="Chapter">
-                                        <h2>Chapter 110</h2>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="padding">
-                                <div className="Border" id="Description">
-                                    <div className="Description">
-                                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor
-                                            incididunt ut labore et dolore magna aliqua. Tristique nulla aliquet enim
-                                            tortor. Imperdiet
-                                            nulla malesuada pellentesque elit eget gravida cum. Amet venenatis urna
-                                            cursus eget nunc
-                                            scelerisque viverra.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div className="horizontal_div">
-                                <div className="padding">
-                                    <div className="Horror_Border">
-                                        <div className="Horror">
-                                            <p>Horror</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="padding">
-                                    <div className="Comedy_Border">
-                                        <div className="Comedy">
-                                            <p>Comedy</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="padding_manga_cover">
-                            <div className="border_vol_cover">
-                                <img className="manga_cover" src="img/manga_covers/chainsaw_man.jpg" alt="Chainsaw Man Vol. 1 Cover"/>
-                            </div>
-                        </div>
-
-                        <div className="padding_right_arrow">
-                            <div className="arrow_box">
-                                <img className="arrow" src="img/icons/right_arrow.png" alt="right_arrow"/>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                <TrendingSlideShow />
 
                 <div className="Search">
                     <div className="positioning_search">
