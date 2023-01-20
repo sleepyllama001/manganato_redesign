@@ -70,25 +70,25 @@ p {
 .search_icon {
     padding-left: 1vw;
     padding-top: .5vh;
-    width: 2vw;
+    width: 2.5vw;
     height: 3.8vh;
 }
 
 .Search_Manga_box {
     display: flex;
     align-items: center;
-    padding-left: 20vw;
-    padding-top: 1.5vh;
 }
 
-.Search_Manga {
-    padding-bottom: 2vh;
+#search_input {
+    background-color: #DDF6F6;
+    border: 0 ;
+    font-size: 2.4vmin;
+    font-family: 'Patrick Hand', serif;;
 }
 
 .positioning_filter {
     display: flex;
     justify-content: center;
-    padding-right: 4.25vw;
     padding-top: 2vh;
 }
 
@@ -96,12 +96,20 @@ p {
     /* Aqua01 */
     background: #DDF6F6;
     border: 1px solid #072448;
+    color: #072448;
     border-radius: 20px;
 
     display: flex;
     flex-direction: row;
     align-items: center;
 
+    transition: background .5s, border .5s, color .5s;
+}
+
+.filter_box:hover {
+    background: #072448;
+    border: 1px solid #DDF6F6;
+    color: white;
 }
 
 #Funnel {
@@ -118,6 +126,16 @@ p {
     padding-right: .5vw;
 }
 
+#filter_options {
+    background: #FF6150;
+    /* Aqua */
+    border: 5px solid #54D2D2;
+    border-radius: 1vw;
+    padding-bottom: 1vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
 .Latest {
     display: flex;
     flex-direction: column;
@@ -132,7 +150,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-top: 2vh;
     width: 25vw;
     height: 5vh;
 }
@@ -143,6 +161,22 @@ p {
 
 #recent_tag {
     text-decoration: none;
+}
+
+#more_btn {
+    background-color: #DDF6F6;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-bottom: 2vh;
+    color: #072448;
+    border-radius: 10px;
+    transition: color .5s, background-color .5s;
+}
+
+#more_btn:hover {
+    background-color: #072448;
+    color: #DDF6F6;
+    cursor: pointer;
 }
 
 .Load_all_images {

@@ -71,22 +71,32 @@
     background: #C6F0F0;
     border-radius: 20px;
     width: 7vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .Horror {
     color: #072448;
-    padding-left: 2vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .Comedy_Border {
     background: #C6F0F0;
     border-radius: 20px;
     width: 7.5vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .Comedy {
     color: #072448;
-    padding-left: 2vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .padding_manga_cover {
@@ -109,13 +119,6 @@
     height: 44vh;
 }
 
-.padding_right_arrow {
-    padding-left: 2vw;
-}
-
-.padding_left_arrow {
-}
-
 .arrow_box {
     width: 4vw;
     height: 6vh;
@@ -125,6 +128,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.padding_right_arrow {
+    padding-left: 1.5vw;
 }
 
 .arrow {

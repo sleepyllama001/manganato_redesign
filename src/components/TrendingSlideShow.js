@@ -8,7 +8,9 @@ export default function SlideShow() {
             <a className="cover" href="../../public/index.html">
                 <img style={{display:'flex'}} className="manga_poster_img" src="img/manga_covers/chainsaw_man.jpg" alt="Chainsaw Man vol 1. cover"/>
                 <img style={{display:'none'}} className="manga_poster_img" src="img/manga_covers/trigun_cover.jpeg" alt="Trigun vol 1. cover"/>
+                <img style={{display:'none'}} className="manga_poster_img" src="img/manga_covers/berserk.png" alt="Berserk vol 1. cover"/>
                 <img style={{display:'none'}} className="manga_poster_img" src="img/manga_covers/onepiece_cover.jpeg" alt="Onepiece vol 1. cover"/>
+                <img style={{display:'none'}} className="manga_poster_img" src="img/manga_covers/rezero.jpg" alt="Re:Zero vol 1. cover"/>
             </a>
 
             <div className="horizontal_div">
@@ -144,6 +146,66 @@ export default function SlideShow() {
                             <div className="padding">
                                 <div className="Border">
                                     <div className="Title">
+                                        <h1>Berserk</h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="padding">
+                                <div className="Border" id="Chapter">
+                                    <div className="Chapter">
+                                        <h2>Chapter 367</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="padding">
+                                <div className="Border" id="Description">
+                                    <div className="Description">
+                                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Tristique nulla aliquet enim
+                                            tortor. Imperdiet
+                                            nulla malesuada pellentesque elit eget gravida cum. Amet venenatis urna
+                                            cursus eget nunc
+                                            scelerisque viverra.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div className="horizontal_div">
+                                <div className="padding">
+                                    <div className="Horror_Border">
+                                        <div className="Horror">
+                                            <p>Fantasy</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="padding">
+                                    <div className="Comedy_Border">
+                                        <div className="Comedy">
+                                            <p>Mature</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="padding_manga_cover">
+                            <div className="border_vol_cover">
+                                <img className="manga_cover" src="img/manga_covers/berserk.png" alt="Berserk Vol. 1 Cover"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={'slide'} style={{display: 'none', flexDirection:'row'}}>
+                        <div className="manga_info">
+                            <div className="padding">
+                                <div className="Border">
+                                    <div className="Title">
                                         <h1>One Piece</h1>
                                     </div>
                                 </div>
@@ -195,6 +257,66 @@ export default function SlideShow() {
                         <div className="padding_manga_cover">
                             <div className="border_vol_cover">
                                 <img className="manga_cover" src="img/manga_covers/onepiece_cover.jpeg" alt="One Piece Vol. 1 Cover"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={'slide'} style={{display: 'none', flexDirection:'row'}}>
+                        <div className="manga_info">
+                            <div className="padding">
+                                <div className="Border">
+                                    <div className="Title">
+                                        <h1>Re:Zero</h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="padding">
+                                <div className="Border" id="Chapter">
+                                    <div className="Chapter">
+                                        <h2>Chapter 512</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="padding">
+                                <div className="Border" id="Description">
+                                    <div className="Description">
+                                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Tristique nulla aliquet enim
+                                            tortor. Imperdiet
+                                            nulla malesuada pellentesque elit eget gravida cum. Amet venenatis urna
+                                            cursus eget nunc
+                                            scelerisque viverra.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div className="horizontal_div">
+                                <div className="padding">
+                                    <div className="Horror_Border">
+                                        <div className="Horror">
+                                            <p>Isekai</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="padding">
+                                    <div className="Comedy_Border">
+                                        <div className="Comedy">
+                                            <p>Fantasy</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="padding_manga_cover">
+                            <div className="border_vol_cover">
+                                <img className="manga_cover" src="img/manga_covers/rezero.jpg" alt="Re:Zero Vol. 1 Cover"/>
                             </div>
                         </div>
                     </div>

@@ -65,125 +65,119 @@ export default function Menu() {
                 </div>
             </div>
 
-            <div className="border">
-                <button id="login" onClick={openLogin}>
-                    <div className="login_register">
-                        <h2>Login</h2>
-                    </div>
-                </button>
-                <Modal
-                    className={"ModalBody"}
-                    isOpen={loginOpen}
-                    onAfterOpen={afterOpenLogin}
-                    onRequestClose={closeLogin}
-                    style={customStyles}
-                    contentLabel="Example Modal">
-                    <div className={"ModalContent"}>
-                        <div>
-                            <h1 className={"Heading"} style={{color:'#072448'}}>Log In to your Account!</h1>
-                            <div style={{display:'flex', justifyContent:'center', maxHeight:'30vh'}}>
-                                <img src="img/profile_pics/makima.png"
-                                     alt="Avatar" className="avatar"/>
-                            </div>
-
-                            <div className="loginRegisterContainer">
-                                <div style={{paddingBottom:'1vh'}}>
-                                    <label><b style={{color:'#072448', fontFamily:'Patrick Hand'}}>Username</b></label>
-                                    <input type="text" placeholder="Enter Username" name="uname" required/>
-                                </div>
-
-                                <div style={{paddingBottom:'1vh'}}>
-                                    <label><b style={{color:'#072448', fontFamily:'Patrick Hand'}}>Password</b></label>
-                                    <input type="password" placeholder="Enter Password" name="psw" required/>
-                                </div>
-
-                                <div id={"Captchar"} style={{display:'flex', justifyContent:'row', paddingBottom:'1vh'}}>
-                                    <img src={'img/icons/captchar.jpg'} alt={"Captchar image"} style={{maxHeight:'5vh', paddingRight:'1vw'}}/>
-                                    <input type="text" placeholder="Captchar" required/>
-                                </div>
-
-                                <button type="submit" className={"loginRegisterButton"}>Sign In</button>
-                                <div style={{display:"flex", alignContent:"center"}}>
-                                    <input type="checkbox" checked="checked"/> <b style={{color:'#072448', fontFamily:'Patrick Hand'}}>Remember me</b>
-                                </div>
-                            </div>
+            <button className="loginRegister" onClick={openLogin}>
+                <div className="login_register">
+                    <h2>Login</h2>
+                </div>
+            </button>
+            <Modal
+                className={"ModalBody"}
+                isOpen={loginOpen}
+                onAfterOpen={afterOpenLogin}
+                onRequestClose={closeLogin}
+                style={customStyles}
+                contentLabel="Example Modal">
+                <div className={"ModalContent"}>
+                    <div>
+                        <h1 className={"Heading"} style={{color:'#072448'}}>Log In to your Account!</h1>
+                        <div style={{display:'flex', justifyContent:'center', maxHeight:'30vh'}}>
+                            <img src="img/profile_pics/makima.png"
+                                 alt="Avatar" className="avatar"/>
                         </div>
 
-                        <div style={{backgroundColor:"#f1f1f1", display:"flex", justifyContent:"space-between", height:'12vh', alignItems:'center'}}>
-                            <div><button className="cancelBtn" onClick={closeLogin}>Cancel</button></div>
-                            <span id="psw" style={{color:'#072448', fontFamily:'Patrick Hand'}}>Forgot <a href={"#"}>password?</a></span>
-                        </div>
-                    </div>
-                </Modal>
-            </div>
-
-            <div className="border">
-                <button id="register" onClick={openRegister}>
-                    <div className="login_register">
-                        <h2>Register</h2>
-                    </div>
-                </button>
-                <Modal
-                    className={"ModalBody"}
-                    isOpen={registerOpen}
-                    onAfterOpen={afterRegister}
-                    onRequestClose={closeRegister}
-                    style={customStyles}
-                    contentLabel="Example Modal">
-                    <div className={"ModalContent"}>
-                        <div>
-                            <h1 className={"Heading"} style={{color:'#072448'}}>Register</h1>
-                            <div style={{display:'flex', justifyContent:'center', maxHeight:'15vh'}}>
-                                <img src="img/profile_pics/luffy.jpg"
-                                     alt="Avatar" className="avatar"/>
+                        <div className="loginRegisterContainer">
+                            <div style={{paddingBottom:'1vh'}}>
+                                <label><b style={{color:'#072448', fontFamily:'Patrick Hand'}}>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required/>
                             </div>
 
-                            <div className="loginRegisterContainer">
-                                <div style={{paddingBottom:'1vh'}}>
-                                    <label><b style={{color:'#072448', fontFamily:'Patrick Hand'}}>Username</b></label>
-                                    <input type="text" placeholder="Enter Username" name="uname" required/>
-                                </div>
+                            <div style={{paddingBottom:'1vh'}}>
+                                <label><b style={{color:'#072448', fontFamily:'Patrick Hand'}}>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required/>
+                            </div>
 
-                                <div style={{paddingBottom:'1vh'}}>
-                                    <label><b style={{color:'#072448', fontFamily:'Patrick Hand'}}>Password</b></label>
-                                    <input type="password" placeholder="Enter Password" name="psw" required/>
-                                </div>
+                            <div id={"Captchar"} style={{display:'flex', justifyContent:'row', paddingBottom:'1vh'}}>
+                                <img src={'img/icons/captchar.jpg'} alt={"Captchar image"} style={{maxHeight:'5vh', paddingRight:'1vw'}}/>
+                                <input type="text" placeholder="Captchar" required/>
+                            </div>
 
-                                <div style={{paddingBottom:'1vh'}}>
-                                    <label><b style={{color:'#072448', fontFamily:'Patrick Hand'}}>Display Name</b></label>
-                                    <input type="text" placeholder="Enter Username" required/>
-                                </div>
-
-                                <div style={{paddingBottom:'1vh'}}>
-                                    <label><b style={{color:'#072448', fontFamily:'Patrick Hand'}}>Email To Recover Password</b></label>
-                                    <input type="text" placeholder="Enter Username" required/>
-                                </div>
-
-                                <div id={"Captchar"} style={{display:'flex', justifyContent:'row', paddingBottom:'1vh'}}>
-                                    <img src={'img/icons/captchar.jpg'} alt={"Captchar image"} style={{maxHeight:'5vh', paddingRight:'1vw'}}/>
-                                    <input type="text" placeholder="Captchar" required/>
-                                </div>
-
-                                <button type="submit" className={"loginRegisterButton"}>Register</button>
+                            <button type="submit" className={"loginRegisterButton"}>Sign In</button>
+                            <div style={{display:"flex", alignContent:"center"}}>
+                                <input type="checkbox" checked="checked"/> <b style={{color:'#072448', fontFamily:'Patrick Hand'}}>Remember me</b>
                             </div>
                         </div>
+                    </div>
 
-                        <div style={{backgroundColor:"#f1f1f1", display:"flex", justifyContent:"center", height:'12vh', alignItems:'center'}}>
-                            <div><button className="cancelBtn" style={{marginLeft:'0'}} onClick={closeLogin}>Cancel</button></div>
+                    <div style={{backgroundColor:"#f1f1f1", display:"flex", justifyContent:"space-between", height:'12vh', alignItems:'center'}}>
+                        <div><button className="cancelBtn" onClick={closeLogin}>Cancel</button></div>
+                        <span id="psw" style={{color:'#072448', fontFamily:'Patrick Hand'}}>Forgot <a href={"#"}>password?</a></span>
+                    </div>
+                </div>
+            </Modal>
+
+            <button className="loginRegister" onClick={openRegister}>
+                <div className="login_register">
+                    <h2>Register</h2>
+                </div>
+            </button>
+            <Modal
+                className={"ModalBody"}
+                isOpen={registerOpen}
+                onAfterOpen={afterRegister}
+                onRequestClose={closeRegister}
+                style={customStyles}
+                contentLabel="Example Modal">
+                <div className={"ModalContent"}>
+                    <div>
+                        <h1 className={"Heading"} style={{color:'#072448'}}>Register</h1>
+                        <div style={{display:'flex', justifyContent:'center', maxHeight:'15vh'}}>
+                            <img src="img/profile_pics/luffy.jpg"
+                                 alt="Avatar" className="avatar"/>
+                        </div>
+
+                        <div className="loginRegisterContainer">
+                            <div style={{paddingBottom:'1vh'}}>
+                                <label><b style={{color:'#072448', fontFamily:'Patrick Hand'}}>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required/>
+                            </div>
+
+                            <div style={{paddingBottom:'1vh'}}>
+                                <label><b style={{color:'#072448', fontFamily:'Patrick Hand'}}>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required/>
+                            </div>
+
+                            <div style={{paddingBottom:'1vh'}}>
+                                <label><b style={{color:'#072448', fontFamily:'Patrick Hand'}}>Display Name</b></label>
+                                <input type="text" placeholder="Enter Username" required/>
+                            </div>
+
+                            <div style={{paddingBottom:'1vh'}}>
+                                <label><b style={{color:'#072448', fontFamily:'Patrick Hand'}}>Email To Recover Password</b></label>
+                                <input type="text" placeholder="Enter Username" required/>
+                            </div>
+
+                            <div id={"Captchar"} style={{display:'flex', justifyContent:'row', paddingBottom:'1vh'}}>
+                                <img src={'img/icons/captchar.jpg'} alt={"Captchar image"} style={{maxHeight:'5vh', paddingRight:'1vw'}}/>
+                                <input type="text" placeholder="Captchar" required/>
+                            </div>
+
+                            <button type="submit" className={"loginRegisterButton"}>Register</button>
                         </div>
                     </div>
-                </Modal>
-            </div>
+
+                    <div style={{backgroundColor:"#f1f1f1", display:"flex", justifyContent:"center", height:'12vh', alignItems:'center'}}>
+                        <div><button className="cancelBtn" style={{marginLeft:'0'}} onClick={closeLogin}>Cancel</button></div>
+                    </div>
+                </div>
+            </Modal>
 
             <div className="padding">
-                <div className="border_night">
-                    <a id="night-mode" href="../../public/index.html">
-                        <div className="night_mode">
-                            <embed className="moon" type="image/png" src={"img/icons/crescent.png"}/>
-                                <h2>Night Mode</h2>
-                        </div>
-                    </a>
-                </div>
+                <a id="night-mode" href="../../public/index.html">
+                    <div className="night_mode">
+                        <embed className="moon" type="image/png" src={"img/icons/crescent.png"}/>
+                            <h2>Night Mode</h2>
+                    </div>
+                </a>
             </div>
 
         </div>

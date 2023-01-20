@@ -7,17 +7,15 @@ import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import MangaCard from "./components/MangaCard";
 import TrendingSlideShow from "./components/TrendingSlideShow"
+import GenreButton from "./components/Genre_Button"
 
 // Data
 import mangaData from "./assets/MangaInfo.json";
+import genres from "./assets/Genres.json";
 
 // Pages
-import Layout from "./Layout";
 import Chapter from "./Chapter";
-import Login from "./Login";
-import NoPage from "./NoPage";
 import Bookdesc from "./Bookdesc";
-import {useState} from "react";
 
 
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
@@ -57,18 +55,26 @@ function App() {
                         <div className="Search_Bar_Box">
                             <img src="img/icons/search_icon.png" className="search_icon" alt="Search_Icon"/>
                                 <div className="Search_Manga_box">
-                                    <h2 className="Search_Manga">Search Manga</h2>
+                                    <input type="text" id="search_input" placeholder={'Search Manga'}/>
                                 </div>
                         </div>
                     </div>
 
                     <div className="positioning_filter">
-                        <div className="filter_box">
+                        <button className="filter_box" onClick={filterDropDown}>
                             <img id="Funnel" src="img/icons/funnel.png" alt="Funnel icon"/>
-                                <p>Filter</p>
-                                <img id="Down-Arrow" src="img/icons/down_arrow.png" alt="Down Arrow icon"/>
-                        </div>
+                            <p>Filter</p>
+                            <img id="Down-Arrow" src="img/icons/down_arrow.png" alt="Down Arrow icon"/>
+                        </button>
                     </div>
+
+                    {/*<div id={'filter_options'}>*/}
+                        <div className={'filters'} style={{display:'none', flexDirection:'row', flexWrap:'wrap'}}>
+                            {genres.map((item, _) => (
+                                <GenreButton genre={item.genre} />
+                            ))}
+                        </div>
+                    {/*</div>*/}
                 </div>
 
                 <div className="Latest">
@@ -78,17 +84,38 @@ function App() {
                     </div>
 
                     <div id={"Recently_Updated_Manga"} style={{display: "flex", flexDirection: "row", flexWrap: "wrap"}}>
-                        {mangaData.map((item, _) => (
+                        {mangaData.map((item, index) => (
                             <div style={{paddingRight: "2vw", paddingBottom: "3vh"}}>
-                                <MangaCard title={item.title} alt={item.alt} chapters={item.chapters} image={item.image}/>
+                                <MangaCard title={item.title} alt={item.alt} chapters={item.chapters}
+                                           image={item.image} author={item.author} genres={item.genres} index={index}/>
                             </div>
 
                         ))}
+                    </div>
+
+                    <div style={{display:'flex', justifyContent:'center'}}>
+                        <div id={'more_btn'}>
+                            <p>More ></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     );
+}
+
+function filterDropDown() {
+    var filterOpts = document.getElementsByClassName("filters");
+
+    if (filterOpts[0].style.display === 'flex') {
+        console.log("flex");
+        filterOpts[0].style.display = 'none';
+    }
+
+    else if (filterOpts[0].style.display === 'none') {
+        console.log("none");
+        filterOpts[0].style.display = 'flex';
+    }
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
