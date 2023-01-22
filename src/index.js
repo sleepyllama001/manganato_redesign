@@ -16,6 +16,7 @@ import genres from "./assets/Genres.json";
 // Pages
 import Chapter from "./Chapter";
 import Bookdesc from "./Bookdesc";
+import Trending from "./Trending";
 
 
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
@@ -31,6 +32,7 @@ export default function Appp() {
             <Route index element={<App />} />
             <Route path="chapter" element={<Chapter />} />
             <Route path="Bookdesc" element={<Bookdesc/>} />
+            <Route path="Trending" element={<Trending/>} />
         </Routes>
       </BrowserRouter>
     );
@@ -44,7 +46,7 @@ function App() {
             <div className="body">
                 <div className="Top_Chapters_Box">
                     <div className="Top_Chapters">
-                        <a id="trending_tag" href="../public/trending.html"><h2>Trending this Week</h2></a>
+                        <a id="trending_tag" href="/Trending"><h2>Trending this Week</h2></a>
                     </div>
                 </div>
 
@@ -54,9 +56,9 @@ function App() {
                     <div className="positioning_search">
                         <div className="Search_Bar_Box">
                             <img src="img/icons/search_icon.png" className="search_icon" alt="Search_Icon"/>
-                                <div className="Search_Manga_box">
-                                    <input type="text" id="search_input" placeholder={'Search Manga'}/>
-                                </div>
+                            <div className="Search_Manga_box">
+                                <input type="text" id="search_input" placeholder={'Search Manga'}/>
+                            </div>
                         </div>
                     </div>
 
