@@ -1,7 +1,27 @@
 .container{
     display: grid;
-    grid-template-columns: [first] 10% [second] 55% [third] 5% [fourth] 25% [fifth] 5%;
+    grid-template-columns: [first] 10% [second] 55% [fourth] 30%;
+    grid-gap: 25px;
 }
+
+.menu_container{
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .menu_container {
+        /* This hides the menu when the device is too small, I'll code in some aspect of a smaller replacement or even a dropdown in its place*/
+        display: none;
+    }
+
+    .container {
+        display: grid;
+        /* grid-template-columns: [first] 5% [second] 90% [third] 5%; */
+        grid-template-columns: [second] 100%
+    }
+}
+
+
 
 .subcontainer_book{
     display: grid;
@@ -11,6 +31,8 @@
     border-radius: 1px;
     border-style: dotted;
 }
+
+
 
 .book_pic{
     display: block;
@@ -38,6 +60,14 @@
 height: 100%;
 object-fit: cover;
 }
+
+.book_text{
+    display: grid;
+    grid-row: rowthree;
+    grid-column: one;
+}
+
+
 
 .subsubcontainer_book{
     display: grid;
@@ -101,4 +131,57 @@ object-fit: cover;
  
     grid-template-rows: [rowone] 30% [rowtwo] 40% [rowthree] 30%;
     grid-template-columns: [first] 5% [second] 40% [third] 10% [fourth] 40% [fifth] 5%;;
+}
+
+.sidebar_manga {
+
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar_manga {
+        /* This hides the menu when the device is too small, I'll code in some aspect of a smaller replacement or even a dropdown in its place*/
+        display: grid;
+        grid-column: second;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .subcontainer_book{
+        display: grid;
+        grid-template-columns: [one] 100%;
+        grid-template-rows: [rowone] 25% [rowtwo] 25% [rowthree] 25% [rowfour] 25% [rowfive] 25% [rowsix] 25%;
+    }
+    
+    .book_pic{
+        display: grid;
+        grid-row: rowtwo;
+        grid-column: one;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        padding-left: 30%;
+    }
+
+    .book_stars{
+        display: grid;
+        grid-row: rowone;
+    }
+
+    .book_text{
+        display: grid;
+        grid-row-start: rowthree;
+        grid-column: one;
+        font-size: 14px;
+    }
+
+    .book_categories {
+       grid-row-start: rowfour;
+       grid-column: one;
+    }
+
+    .button_grid{
+        display: grid;
+        grid-row-start: rowfive;
+        grid-column: one;
+    }
 }
