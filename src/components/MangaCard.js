@@ -1,5 +1,7 @@
 import "./MangaCard.css";
 import React from "react";
+import MangaCard_Back from "./MangaCard_Back"
+
 
 const flip_map = new Map();
 
@@ -48,6 +50,7 @@ export default function MangaCard({title, alt, chapters, image, genres, index, a
 
 function Flip(index) {
     var flip_inner = document.getElementsByClassName("flip_card_inner");
+
     if (flip_map.get(index) === undefined) {
         flip_map.set(index, false);
     }
