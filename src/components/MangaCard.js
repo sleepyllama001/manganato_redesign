@@ -10,14 +10,14 @@ export default function MangaCard({title, alt, chapters, image, genres, index, a
         <button className={"Manga_Card_Border"} onClick={() => Flip(index)}>
             <div className={'flip_card_inner'}>
                 <div className={'flip_card_front'}>
-                    <img className={"covers"} src={image} alt={alt}/>
+                    <a href={'/Bookdesc'}><img className={"covers"} src={image} alt={alt}/></a>
                     <div className="manga_title_chapters">
-                        <h2>{title}</h2>
-                        <p>{chapters[0]}</p>
-                        <p>{chapters[1]}</p>
-                        <p>{chapters[2]}</p>
-                        <p>{chapters[3]}</p>
-                        <p>{chapters[4]}</p>
+                        <a href={'/Bookdesc'} style={{color:'black'}}><h2>{title}</h2></a>
+                        <a href={'/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[0]}</p></a>
+                        <a href={'/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[1]}</p></a>
+                        <a href={'/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[2]}</p></a>
+                        <a href={'/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[3]}</p></a>
+                        <a href={'/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[4]}</p></a>
                     </div>
                 </div>
 

@@ -41,8 +41,6 @@
 }
 
 .border_box {
-    display: flex;
-    align-items: center;
     /* Pochita */
     background: #FF6150;
     /* Aqua */
@@ -56,6 +54,8 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 #Home {

@@ -30,6 +30,7 @@ export default function Appp() {
       <BrowserRouter>
         <Routes>
             <Route index element={<App />} />
+            <Route path="App" element={<App />} />
             <Route path="chapter" element={<Chapter />} />
             <Route path="Bookdesc" element={<Bookdesc/>} />
             <Route path="Trending" element={<Trending/>} />
@@ -81,7 +82,7 @@ function App() {
 
                 <div className="Latest">
                     <div className="latest_updates_box">
-                        <a id="recent_tag" href="../public/recently_updated.html"><h2 id="latest-update-text">Recently
+                        <a id="recent_tag" href="/Trending"><h2 id="latest-update-text">Recently
                             Updated</h2></a>
                     </div>
 
@@ -96,9 +97,9 @@ function App() {
                     </div>
 
                     <div style={{display:'flex', justifyContent:'center'}}>
-                        <div id={'more_btn'}>
+                        <a id={'more_btn'} href={'/Trending'} style={{textDecoration:'none'}}>
                             <p>More ></p>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

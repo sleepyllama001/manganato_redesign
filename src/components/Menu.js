@@ -48,7 +48,7 @@ export default function Menu() {
     return (
         <div className="menu">
             <div className="logo">
-                <a className="horizontal_logo" href="../../public/index.html">
+                <a className="horizontal_logo" href="/App">
                     <embed className="M" type={"image/png"} src={"img/icons/manganato_logo.png"}/>
                         <div className="Manga"><h1>Manga</h1></div>
                         <div className="Nato"><h1>Nato</h1></div>
@@ -58,9 +58,9 @@ export default function Menu() {
             <div className="menu_bar">
                 <div className="border_box">
                     <ul className="horizontal">
-                        <li><a id="Home" href="../../public/index.html">Home</a></li>
-                        <li><a id="Recent" href="recently_updated.html">Recently Updated</a></li>
-                        <li><a id="Trending" href="trending.html">Trending</a></li>
+                        <li><a id="Home" href="/App">Home</a></li>
+                        <li><a id="Recent" href="/Trending">Recently Updated</a></li>
+                        <li><a id="Trending" href="/Trending">Trending</a></li>
                     </ul>
                 </div>
             </div>
