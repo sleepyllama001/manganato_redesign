@@ -5,7 +5,7 @@ import React from "react";
 export default function Back_Card({title, author, genres, image, alt}) {
     return (
         <button className={"Back-Card-Border"}>
-            <div className={'Card-Content'}>
+            <a className={'Card-Content'} href={'/Bookdesc'} style={{textDecoration:'none', color:'black'}}>
                 <div className={'cover_back'}>
                     <img className={"covers"} style={{filter:'blur(5px)'}} src={image} alt={alt}/>
                     <div className={'cover_back_text_container'}>
@@ -26,7 +26,7 @@ export default function Back_Card({title, author, genres, image, alt}) {
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                         unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
-            </div>
+            </a>
         </button>
     )
 }

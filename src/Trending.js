@@ -63,9 +63,9 @@ export default function Trending() {
                     </div>
 
                     <div style={{display:'flex', justifyContent:'center'}}>
-                        <div id={'more_btn'}>
+                        <a id={'more_btn'} href={'/Trending'} style={{textDecoration:'none'}}>
                             <p>More ></p>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

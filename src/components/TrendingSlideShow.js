@@ -5,7 +5,7 @@ export default function SlideShow() {
 
     return (
         <div className="title_chapter_description_box">
-            <a className="cover" href="../../public/index.html">
+            <a className="cover" href="/Bookdesc">
                 <img style={{display:'flex'}} className="manga_poster_img" src="img/manga_covers/chainsaw_man.jpg" alt="Chainsaw Man vol 1. cover"/>
                 <img style={{display:'none'}} className="manga_poster_img" src="img/manga_covers/trigun_cover.jpeg" alt="Trigun vol 1. cover"/>
                 <img style={{display:'none'}} className="manga_poster_img" src="img/manga_covers/berserk.png" alt="Berserk vol 1. cover"/>
