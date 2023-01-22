@@ -376,6 +376,7 @@ p {
 
   .left {
     position: relative;
+    padding-top: 35px;
   }
 
   .Next_Prev{
@@ -401,6 +402,7 @@ p {
     margin-right: 5.5%;
     width: 6vh;
     text-align: center;
+    padding-left: 20px;
   }
 
   .next_button {
@@ -416,9 +418,45 @@ p {
     border-radius: 10px;
     color: white;
     margin-left: 5.5%;
+    padding-left: 20px;
+    
     
   }
 
  #chapter {
     text-align: center;
+    justify-content: center;
  }
+
+ #mangapanels {
+    text-align: center;
+    justify-content: center;
+    max-width: 90%;
+ }
+
+ #pages{
+    justify-content: center;
+    text-align: center;
+    /* max-width: 80vw; */
+    max-width: 100%;
+    padding-top: 50px;
+ }
+
+ @media screen and (max-width: 600px) {
+    .menu_container {
+        /* This hides the menu when the device is too small, I'll code in some aspect of a smaller replacement or even a dropdown in its place*/
+        display: none;
+    }
+
+    #pages{
+        padding-top: 75px;
+    }
+
+    .next_button{
+        padding-left: 0px;
+    }
+
+    .previous_button{
+        padding-left: 1px;
+    }
+}

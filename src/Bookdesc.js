@@ -1,16 +1,20 @@
 import "./Bookdesc.css";
+import "./App.css"
 import Menu from "./components/Menu";
 
 const Bookdesc = () => {
 
     return(
 <div>
+    <div className="menu_container">
 <Menu>
     </Menu>
+    </div>
+
 
     <div className="container">
         
-        <div>buffer</div>
+        <div></div>
         <div className="subcontainer_book">
             <div className="button_grid">
             <a className="bookmark_button">Bookmark?</a>
@@ -26,8 +30,46 @@ const Bookdesc = () => {
             <div className="subsubcontainer_book">
                 <img src="/img/icons/star_rating.jpeg" className="book_stars"></img>
             </div>
+
         </div>
+
+        <div className="sidebar_manga">
+        <div className="horizontal_divs">
+                        <div className="Manga_Card_Border">
+                            <img className="covers" src="/img/manga_covers/mob_psycho_cover.png" alt="Mob Psycho 100 Vol 1. Cover"/>
+                                <div className="manga_title_chapters">
+                                    <h2>Mob Psycho 100</h2>
+                                    <p>Chapter 125</p>
+                                    <p>Chapter 124</p>
+                                    <p>Chapter 123</p>
+                                </div>
+                        </div>
+                        </div>
+                        <div className="horizontal_divs">
+                        <div className="Manga_Card_Border">
+                            <img className="covers" src="/img/manga_covers/mob_psycho_cover.png" alt="Mob Psycho 100 Vol 1. Cover"/>
+                                <div className="manga_title_chapters">
+                                    <h2>Mob Psycho 100</h2>
+                                    <p>Chapter 125</p>
+                                    <p>Chapter 124</p>
+                                    <p>Chapter 123</p>
+                                </div>
+                        </div>
+                        </div>
+                        <div className="horizontal_divs">
+                        <div className="Manga_Card_Border">
+                            <img className="covers" src="/img/manga_covers/mob_psycho_cover.png" alt="Mob Psycho 100 Vol 1. Cover"/>
+                                <div className="manga_title_chapters">
+                                    <h2>Mob Psycho 100</h2>
+                                    <p>Chapter 125</p>
+                                    <p>Chapter 124</p>
+                                    <p>Chapter 123</p>
+                                </div>
+                        </div>
+                        </div>
+                        </div>
     </div>
+
 </div>
 )}
 
