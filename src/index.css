@@ -9,7 +9,7 @@ h2 {
     font-family: 'Patrick Hand', serif;
 }
 p {
-    font-size: 2vmin;
+    font-size: 2.4vmin;
     font-family: 'Patrick Hand', serif;
 }
 
@@ -41,146 +41,6 @@ p {
     color: #FFFFFF;
 }
 
-.title_chapter_description_box {
-    width: 89.7vw;
-    height: 60vh;
-}
-
-.cover {
-    overflow: hidden;
-}
-
-.manga_poster_img {
-    position: absolute;
-    overflow: hidden;
-    object-fit: cover;
-    width: 89vw;
-    height: 60vh;
-    filter: blur(6px);
-    opacity: .8;
-    z-index: 1;
-}
-
-
-.manga_info {
-    display: flex;
-    flex-direction: column;
-    padding-left: 1vw;
-    opacity: 1;
-}
-
-.padding {
-    padding-right: 3vw;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    z-index: 2;
-}
-
-.Border {
-    background: #C6F0F0;
-    border-radius: 20px;
-    width: 25vw;
-    height: 10vh;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    padding-left: 2vw;
-}
-
-.Title {
-    color: #072448;
-}
-
-#Chapter {
-    width: 12vw;
-    height: 7vh;
-}
-.Chapter {
-    color: #072448;
-}
-
-#Description {
-    width: 50vw;
-}
-
-.Description {
-    color: #072448;
-}
-
-.horizontal_div {
-    display: flex;
-    flex-direction: row;
-    width: 50vw;
-    align-items: center;
-}
-
-.Horror_Border {
-    background: #C6F0F0;
-    border-radius: 20px;
-    width: 7vw;
-}
-
-.Horror {
-    color: #072448;
-    padding-left: 2vw;
-}
-
-.Comedy_Border {
-    background: #C6F0F0;
-    border-radius: 20px;
-    width: 7.5vw;
-}
-
-.Comedy {
-    color: #072448;
-    padding-left: 2vw;
-}
-
-.padding_manga_cover {
-    padding-top: 5vh;
-    z-index: 2;
-}
-
-.border_vol_cover {
-    z-index: 2;
-    background: #C6F0F0;
-    border-radius: 20px;
-    width: 23vw;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.manga_cover {
-    width: 20vw;
-    height: 44vh;
-}
-
-.padding_right_arrow {
-    padding-left: 2vw;
-    z-index: 2;
-}
-
-.padding_left_arrow {
-    z-index: 2;
-}
-
-.arrow_box {
-    width: 4vw;
-    height: 6vh;
-    background: #ACB6C2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.arrow {
-    width: 3vw;
-    height: 5vh;
-}
-
 .Search {
     display: flex;
     flex-direction: column;
@@ -210,25 +70,25 @@ p {
 .search_icon {
     padding-left: 1vw;
     padding-top: .5vh;
-    width: 2vw;
+    width: 2.5vw;
     height: 3.8vh;
 }
 
 .Search_Manga_box {
     display: flex;
     align-items: center;
-    padding-left: 20vw;
-    padding-top: 1.5vh;
 }
 
-.Search_Manga {
-    padding-bottom: 2vh;
+#search_input {
+    background-color: #DDF6F6;
+    border: 0 ;
+    font-size: 2.4vmin;
+    font-family: 'Patrick Hand', serif;;
 }
 
 .positioning_filter {
     display: flex;
     justify-content: center;
-    padding-right: 4.25vw;
     padding-top: 2vh;
 }
 
@@ -236,12 +96,20 @@ p {
     /* Aqua01 */
     background: #DDF6F6;
     border: 1px solid #072448;
+    color: #072448;
     border-radius: 20px;
 
     display: flex;
     flex-direction: row;
     align-items: center;
 
+    transition: background .5s, border .5s, color .5s;
+}
+
+.filter_box:hover {
+    background: #072448;
+    border: 1px solid #DDF6F6;
+    color: white;
 }
 
 #Funnel {
@@ -258,6 +126,16 @@ p {
     padding-right: .5vw;
 }
 
+#filter_options {
+    background: #FF6150;
+    /* Aqua */
+    border: 5px solid #54D2D2;
+    border-radius: 1vw;
+    padding-bottom: 1vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
 .Latest {
     display: flex;
     flex-direction: column;
@@ -272,7 +150,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-top: 2vh;
     width: 25vw;
     height: 5vh;
 }
@@ -285,37 +163,20 @@ p {
     text-decoration: none;
 }
 
-.horizontal_divs {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 90vw;
-    padding-bottom: 2vh;
-}
-
-.Manga_Card_Border {
-    width: 28vw;
-    height: 30vh;
-    /* Pochita01 */
-    background: #FFDFDC;
+#more_btn {
+    background-color: #DDF6F6;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-bottom: 2vh;
+    color: #072448;
     border-radius: 10px;
-
-    display: flex;
-    flex-direction: row;
+    transition: color .5s, background-color .5s;
 }
 
-.covers {
-    width: 10vw;
-    height: 28vh;
-    padding-left: 2vw;
-    padding-top: 1vh;
-}
-
-.manga_title_chapters {
-    display: flex;
-    flex-direction: column;
-
-    padding-left: 2vw;
+#more_btn:hover {
+    background-color: #072448;
+    color: #DDF6F6;
+    cursor: pointer;
 }
 
 .Load_all_images {

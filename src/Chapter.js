@@ -2,11 +2,6 @@ import { useEffect } from "react";
 import "./App.css";
 import Menu from "./components/Menu";
 
-
-
-
-
-
 const Chapter = () => {
 
     const PageAutomator = (holder) => {
