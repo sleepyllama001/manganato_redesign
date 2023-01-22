@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./App.css";
 import Menu from "./components/Menu";
 
@@ -28,17 +29,23 @@ const Chapter = () => {
             if(valid != null){
                 console.log(valid);
                 console.log(consoler);
-                // document.getElementById("pages").appendChild(valid);
+                document.getElementById("pages").appendChild(valid);
             }
         }
     }
+    useEffect(() => {
+        {PageAutomator(5)};
+    }, [])
+   
 
     return( 
     
     
     <div>
+        <div className="menu_container">
     <Menu>
     </Menu>
+    </div>
     <div className="top_bar">
     <div className="reading_options">
         <select name="Chapter" id="chapter_dropdown">
@@ -61,7 +68,7 @@ const Chapter = () => {
         
 
     </div>
-    {PageAutomator(5)}
+   
     </div>
     
   )};
