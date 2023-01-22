@@ -100,32 +100,24 @@ ul.horizontal li {
     padding: 1vh 1.5vw;
 }
 /*      LOGIN REGISTER*/
-.border {
-    display: flex;
-    align-items: center;
-    max-height: 6vh;
-    /* Navy */
-    background: #072448;
-    /* Aqua */
-    border: 5px solid #54D2D2;
-    border-radius: 10px;
-}
-
-#login {
+.loginRegister {
     text-decoration: none;
     background: #072448;
-    border: 0 solid #072448;
+    border: 5px solid #54D2D2;
     border-radius: 10px;
     height: 6vh;
     display: flex;
     align-items: center;
+    transition: background .5s, border .5s;
 }
-#login:hover {
+.loginRegister:hover {
     /* Navy05 */
-    background: #5A6D85;
+    background: #54D2D2;
+    border: 5px solid #072448;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
 }
+
+/*       MODAL*/
 
 .ModalBody {
     width: 40vw;
@@ -229,27 +221,6 @@ input[type=password] {
     margin-right: 2vw;
 }
 
-#register {
-    text-decoration: none;
-    background: #072448;
-    border: 0 solid #072448;
-    border-radius: 10px;
-    height: 6vh;
-    display: flex;
-    align-items: center;
-}
-#register:hover {
-    /* Navy05 */
-    background: #5A6D85;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    height: 6vh;
-}
-
-#profilPic {
-
-}
-
 .login_register {
     color: #FFFFFF;
     padding: 1vw;
@@ -273,12 +244,21 @@ input[type=password] {
 #night-mode {
     text-decoration: none;
     color: #072448;
+    height: 6vh;
     display: flex;
     align-items: center;
+    /* Aqua */
+    background: #54D2D2;
+    /* Navy */
+    border: 5px solid #072448;
+    border-radius: 10px;
+    transition: color .5s, background .5s, border .5s;
 }
 #night-mode:hover {
     /* Navy05 */
-    background: #46AFAF;
+    color: white;
+    background: #072448;
+    border: 5px solid #54D2D2;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     height: 6vh;
@@ -286,6 +266,10 @@ input[type=password] {
 
 .moon {
     max-height: 5vh;
+}
+.moon:hover {
+    color: white;
+    background-color: white;
 }
 
 .night_mode {
