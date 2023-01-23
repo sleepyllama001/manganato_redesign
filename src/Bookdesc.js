@@ -1,5 +1,5 @@
 import "./Bookdesc.css";
-import "./App.css"
+import "./booty.css"
 import Menu from "./components/Menu";
 
 const Bookdesc = () => {

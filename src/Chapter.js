@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import "./App.css";
+import "./booty.css";
 import Menu from "./components/Menu";
 
 const Chapter = () => {
