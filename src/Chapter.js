@@ -1,8 +1,19 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./booty.css";
 import Menu from "./components/Menu";
+import Phonemenu from "./Phonemenu";
 
 const Chapter = () => {
+
+    const [theme, setTheme] = useState('light');
+    const Darkmode = () => {
+        if (theme === 'light'){
+            setTheme('dark');
+        }
+        else{
+            setTheme('light');
+        }
+    };
 
     const PageAutomator = (holder) => {
         let initialText = "/img/kaoru_hana/page1.jpeg";
@@ -35,12 +46,18 @@ const Chapter = () => {
 
     return( 
     
-    
+    <div className={`App ${theme}`}>
     <div>
         <div className="menu_container">
     <Menu>
     </Menu>
     </div>
+    <div>
+        <Phonemenu>
+            
+        </Phonemenu>
+    </div>
+    <button onClick={Darkmode}></button>
     <div className="top_bar">
     <div className="reading_options">
         <select name="Chapter" id="chapter_dropdown">
@@ -64,6 +81,7 @@ const Chapter = () => {
 
     </div>
    
+    </div>
     </div>
     
   )};

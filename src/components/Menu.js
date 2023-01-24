@@ -17,6 +17,18 @@ const customStyles = {
 // Creates the Nav bar! Includes the Manganato logo, Home,
 // Recently Updated, Trending, Login, Register, and Night Mode Buttons
 export default function Menu() {
+
+    const [theme, setTheme] = useState('light');
+    const Darkmodez = () => {
+        console.log("kappa");
+        if (theme === 'light'){
+            setTheme('dark');
+        }
+        else{
+            setTheme('light');
+        }
+    };
+
     const [loginOpen, setLoginOpen] = useState(false);
 
     function openLogin() {
@@ -172,8 +184,8 @@ export default function Menu() {
             </Modal>
 
             <div className="padding">
-                <a id="night-mode" href="../../public/index.html">
-                    <div className="night_mode">
+                <a id="night-mode">
+                    <div className="night_mode" onClick={() => {Darkmodez()}}>
                         <embed className="moon" type="image/png" src={"img/icons/crescent.png"}/>
                             <h2>Night Mode</h2>
                     </div>
