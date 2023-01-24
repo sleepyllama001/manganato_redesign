@@ -53,7 +53,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     display: flex;
     align-items: center;
 }
@@ -99,6 +99,21 @@ ul.horizontal li {
     font-family: 'Patrick Hand', serif;
     padding: 1vh 1.5vw;
 }
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 1001px) {
+    ul.horizontal li {
+        font-size: 1.8vw;
+    }
+}
+
+/* If the screen size is 61000px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1000px) {
+    ul.horizontal li {
+        font-size: 2vw;
+    }
+}
+
 /*      LOGIN REGISTER*/
 .loginRegister {
     text-decoration: none;

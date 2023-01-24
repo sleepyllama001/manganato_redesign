@@ -12,12 +12,12 @@ export default function MangaCard({title, alt, chapters, image, genres, index, a
                 <div className={'flip_card_front'}>
                     <a href={'/Bookdesc'}><img className={"covers"} src={image} alt={alt}/></a>
                     <div className="manga_title_chapters">
-                        <a href={'/Bookdesc'} style={{color:'black'}}><h2>{title}</h2></a>
-                        <a href={'/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[0]}</p></a>
-                        <a href={'/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[1]}</p></a>
-                        <a href={'/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[2]}</p></a>
-                        <a href={'/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[3]}</p></a>
-                        <a href={'/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[4]}</p></a>
+                        <a className={'title'} href={'/Bookdesc'} style={{color:'black'}}><h2>{title}</h2></a>
+                        <a className={'chapter'} href={'/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[0]}</p></a>
+                        <a className={'chapter'} href={'/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[1]}</p></a>
+                        <a className={'chapter'} href={'/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[2]}</p></a>
+                        <a className={'chapter'} href={'/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[3]}</p></a>
+                        <a className={'chapter'} href={'/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[4]}</p></a>
                     </div>
                 </div>
 
@@ -37,7 +37,7 @@ export default function MangaCard({title, alt, chapters, image, genres, index, a
                         </div>
                     </div>
                     <div className="manga_title_description">
-                        <h2>{title}</h2>
+                        <h2 className={'title'}>{title}</h2>
                         <p>Description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                             unknown printer took a galley of type and scrambled it to make a type specimen book.</p>

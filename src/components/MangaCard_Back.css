@@ -1,5 +1,6 @@
 .Back-Card-Border {
     width: 26vw;
+    min-width: 250px;
     height: 35vh;
     /* Pochita01 */
     background: #FFDFDC;
