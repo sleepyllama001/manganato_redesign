@@ -2,7 +2,7 @@
   "name": "react-studio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://github.com/eirik64/manganato_redesign",
   "dependencies": {
     "bootstrap": "^5.2.3",
     "gh-pages": "^5.0.0",

@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import "./index.css"
 
 // Components
@@ -27,7 +27,7 @@ mangaData.forEach((item) => {
 
 export default function Appp() {
     return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <Routes>
             <Route index element={<App />} />
             <Route path="/manganato_redesign/App" element={<App />} />
@@ -35,7 +35,7 @@ export default function Appp() {
             <Route path="/manganato_redesign/Bookdesc" element={<Bookdesc/>} />
             <Route path="/manganato_redesign/Trending" element={<Trending/>} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 
