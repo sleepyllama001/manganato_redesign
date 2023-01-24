@@ -27,7 +27,7 @@ mangaData.forEach((item) => {
 
 export default function Appp() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
             <Route index element={<App />} />
             <Route path="App" element={<App />} />
