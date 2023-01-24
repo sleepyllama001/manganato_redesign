@@ -3,12 +3,58 @@ import "./booty.css"
 import Menu from "./components/Menu";
 
 const Bookdesc = () => {
+    const myFunction = () => {
+        console.log("kappa");
+
+        let x = document.getElementById("myLinks");
+        if(x == null){
+            console.log(x);
+        }
+        else{
+
+        
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+    }
+      }
 
     return(
+        
 <div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
     <div className="menu_container">
 <Menu>
     </Menu>
+    </div>
+
+    <div className="phone_menu">
+    <div className="topnav">
+    <img className="phone_logo" src="img/icons/manganato_logo.png"></img>
+
+   
+  {/* <a href="#home" className="active">Logo</a> */}
+  
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  
+  <a href="#" className="icon" onClick={() => {myFunction()}}>
+    <i className="fa fa-bars"></i>
+  </a>
+  <div className="padding_book_desc">
+                <a id="night-mode">
+                    <div className="night_mode">
+                        <embed className="moon" type="image/png" src={"img/icons/crescent.png"}/>
+                            <h2>Night Mode</h2>
+                    </div>
+                </a>
+            </div>
+</div>
     </div>
 
 
@@ -33,15 +79,16 @@ const Bookdesc = () => {
 
         </div>
 
+
         <div className="sidebar_manga">
         <div className="horizontal_divs">
                         <div className="Manga_Card_Border">
                             <img className="covers" src="/img/manga_covers/mob_psycho_cover.png" alt="Mob Psycho 100 Vol 1. Cover"/>
                                 <div className="manga_title_chapters">
-                                    <h2>Mob Psycho 100</h2>
-                                    <p>Chapter 125</p>
-                                    <p>Chapter 124</p>
-                                    <p>Chapter 123</p>
+                                    <h2 className="manga_title_title">Mob Psycho 100</h2>
+                                    <p className="manga_title_chapters_chapters">Chapter 125</p>
+                                    <p className="manga_title_chapters_chapters">Chapter 124</p>
+                                    <p className="manga_title_chapters_chapters">Chapter 123</p>
                                 </div>
                         </div>
                         </div>
@@ -49,10 +96,10 @@ const Bookdesc = () => {
                         <div className="Manga_Card_Border">
                             <img className="covers" src="/img/manga_covers/mob_psycho_cover.png" alt="Mob Psycho 100 Vol 1. Cover"/>
                                 <div className="manga_title_chapters">
-                                    <h2>Mob Psycho 100</h2>
-                                    <p>Chapter 125</p>
-                                    <p>Chapter 124</p>
-                                    <p>Chapter 123</p>
+                                    <h2 className="manga_title_title">Mob Psycho 100</h2>
+                                    <p className="manga_title_chapters_chapters">Chapter 125</p>
+                                    <p className="manga_title_chapters_chapters">Chapter 124</p>
+                                    <p className="manga_title_chapters_chapters">Chapter 123</p>
                                 </div>
                         </div>
                         </div>
@@ -60,10 +107,10 @@ const Bookdesc = () => {
                         <div className="Manga_Card_Border">
                             <img className="covers" src="/img/manga_covers/mob_psycho_cover.png" alt="Mob Psycho 100 Vol 1. Cover"/>
                                 <div className="manga_title_chapters">
-                                    <h2>Mob Psycho 100</h2>
-                                    <p>Chapter 125</p>
-                                    <p>Chapter 124</p>
-                                    <p>Chapter 123</p>
+                                    <h2 className="manga_title_title">Mob Psycho 100</h2>
+                                    <p className="manga_title_chapters_chapters">Chapter 125</p>
+                                    <p className="manga_title_chapters_chapters">Chapter 124</p>
+                                    <p className="manga_title_chapters_chapters">Chapter 123</p>
                                 </div>
                         </div>
                         </div>
