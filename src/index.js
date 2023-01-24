@@ -30,10 +30,10 @@ export default function Appp() {
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
             <Route index element={<App />} />
-            <Route path="App" element={<App />} />
-            <Route path="chapter" element={<Chapter />} />
-            <Route path="Bookdesc" element={<Bookdesc/>} />
-            <Route path="Trending" element={<Trending/>} />
+            <Route path="/manganato_redesign/App" element={<App />} />
+            <Route path="/manganato_redesign/chapter" element={<Chapter />} />
+            <Route path="/manganato_redesign/Bookdesc" element={<Bookdesc/>} />
+            <Route path="/manganato_redesign/Trending" element={<Trending/>} />
         </Routes>
       </BrowserRouter>
     );
