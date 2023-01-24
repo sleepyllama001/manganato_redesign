@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "./static/css/main.21ba82b7.css",
-    "main.js": "./static/js/main.71143a05.js",
-    "index.html": "./index.html",
-    "main.21ba82b7.css.map": "./static/css/main.21ba82b7.css.map",
-    "main.71143a05.js.map": "./static/js/main.71143a05.js.map"
+    "main.css": "./http://sleepyllama001.github.io/manganato_redesign/static/css/main.21ba82b7.css",
+    "main.js": "./http://sleepyllama001.github.io/manganato_redesign/static/js/main.1d0ad95a.js",
+    "index.html": "./http://sleepyllama001.github.io/manganato_redesign/index.html",
+    "main.21ba82b7.css.map": "./http://sleepyllama001.github.io/manganato_redesign/static/css/main.21ba82b7.css.map",
+    "main.1d0ad95a.js.map": "./http://sleepyllama001.github.io/manganato_redesign/static/js/main.1d0ad95a.js.map"
   },
   "entrypoints": [
     "static/css/main.21ba82b7.css",
-    "static/js/main.71143a05.js"
+    "static/js/main.1d0ad95a.js"
   ]
 }
