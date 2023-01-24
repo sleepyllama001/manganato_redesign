@@ -86,7 +86,7 @@ function App() {
                             Updated</h2></a>
                     </div>
 
-                    <div id={"Recently_Updated_Manga"} style={{display: "flex", flexDirection: "row", flexWrap: "wrap"}}>
+                    <div id={"Recently_Updated_Manga"} style={{display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent:'space-between'}}>
                         {mangaData.map((item, index) => (
                             <div style={{paddingRight: "2vw", paddingBottom: "3vh"}}>
                                 <MangaCard title={item.title} alt={item.alt} chapters={item.chapters}

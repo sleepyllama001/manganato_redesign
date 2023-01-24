@@ -1,5 +1,6 @@
 .Manga_Card_Border {
     width: 29vw;
+    min-width: 300px;
     height: 30vh;
     /* Pochita01 */
     background: #FFDFDC;
@@ -48,6 +49,7 @@
 
 .covers {
     width: 10vw;
+    min-width: 130px;
     height: 28vh;
     padding-left: 1vw;
     padding-top: 1vh;
@@ -69,4 +71,13 @@
 .manga_title_chapters {
     padding-left: 2vw;
     text-align: left;
+}
+
+.title {
+    /*font-size: 50px;*/
+    min-font-size: 17px;
+}
+
+.chapter {
+    min-font-size: 12px;
 }
