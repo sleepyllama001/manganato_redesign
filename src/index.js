@@ -42,24 +42,24 @@ mangaData.forEach((item) => {
 //   }
 
 
-const router = createBrowserRouter([
-    {
-        path: process.env.PUBLIC_URL,
-        element: <App />,
-    },
-    {
-        path: process.env.PUBLIC_URL + "Trending",
-        element: <Trending />,
-    },
-    {
-        path: process.env.PUBLIC_URL + "chapter",
-        element: <Chapter />,
-    },
-    {
-        path: process.env.PUBLIC_URL + "Bookdesc",
-        element: <Bookdesc />,
-    },
-]);
+// const router = createBrowserRouter([
+//     {
+//         path: process.env.PUBLIC_URL,
+//         element: <App />,
+//     },
+//     {
+//         path: process.env.PUBLIC_URL + "Trending",
+//         element: <Trending />,
+//     },
+//     {
+//         path: process.env.PUBLIC_URL + "chapter",
+//         element: <Chapter />,
+//     },
+//     {
+//         path: process.env.PUBLIC_URL + "Bookdesc",
+//         element: <Bookdesc />,
+//     },
+// ]);
 
 function App() {
     return (
@@ -145,9 +145,9 @@ function filterDropDown() {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const foot = ReactDOM.createRoot(document.getElementById("footer"))
-root.render(
-    <React.StrictMode>
-        <RouterProvider router={router} />
-    </React.StrictMode>
-);
+// root.render(
+//     <React.StrictMode>
+//         <RouterProvider router={router} />
+//     </React.StrictMode>
+// );
 foot.render(<Footer />);
