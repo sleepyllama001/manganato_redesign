@@ -127,7 +127,7 @@ export default function Trending() {
                     </div>
 
                     <div style={{display:'flex', justifyContent:'center'}}>
-                        <a id={'more_btn'} href={'/Trending'} style={{textDecoration:'none'}}>
+                        <a id={'more_btn'} href={'/eirik64/manganato_redesign/Trending'} style={{textDecoration:'none'}}>
                             <p>More ></p>
                         </a>
                     </div>

@@ -60,7 +60,7 @@ export default function Menu() {
     return (
         <div className="menu">
             <div className="logo">
-                <a className="horizontal_logo" href="/App">
+                <a className="horizontal_logo" href="/eirik64/manganato_redesign/">
                     <embed className="M" type={"image/png"} src={"img/icons/manganato_logo.png"}/>
                         <div className="Manga"><h1>Manga</h1></div>
                         <div className="Nato"><h1>Nato</h1></div>
@@ -70,9 +70,9 @@ export default function Menu() {
             <div className="menu_bar">
                 <div className="border_box">
                     <ul className="horizontal">
-                        <li><a id="Home" href="/App">Home</a></li>
-                        <li><a id="Recent" href="/Trending">Recently Updated</a></li>
-                        <li><a id="Trending" href="/Trending">Trending</a></li>
+                        <li key={'0'}><a id="Home" href="/eirik64/manganato_redesign/">Home</a></li>
+                        <li key={'1'}><a id="Recent" href="/eirik64/manganato_redesign/Trending">Recently Updated</a></li>
+                        <li key={'2'}><a id="Trending" href="/eirik64/manganato_redesign/Trending">Trending</a></li>
                     </ul>
                 </div>
             </div>

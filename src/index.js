@@ -1,5 +1,7 @@
 import ReactDOM from "react-dom/client";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import React from "react";
+import {HashRouter, Routes, Route, RouterProvider, createBrowserRouter} from "react-router-dom";
+
 import "./index.css"
 
 // Components
@@ -25,19 +27,39 @@ mangaData.forEach((item) => {
 });
 /* ############################################################## */
 
-export default function Appp() {
-    return (
-      <HashRouter basename={process.env.PUBLIC_URL}>
-        <Routes>
-            <Route index element={<App />} />
-            <Route path="/manganato_redesign/App" element={<App />} />
-            <Route path="/manganato_redesign/chapter" element={<Chapter />} />
-            <Route path="/manganato_redesign/Bookdesc" element={<Bookdesc/>} />
-            <Route path="/manganato_redesign/Trending" element={<Trending/>} />
-        </Routes>
-      </HashRouter>
-    );
-  }
+// export default function Appp() {
+//     return (
+//       <HashRouter>
+//         <Routes>
+//             <Route index element={<App />} />
+//             <Route path="/manganato_redesign/App" element={<App />} />
+//             <Route path="/manganato_redesign/chapter" element={<Chapter />} />
+//             <Route path="/manganato_redesign/Bookdesc" element={<Bookdesc/>} />
+//             <Route path="/manganato_redesign/Trending" element={<Trending/>} />
+//         </Routes>
+//       </HashRouter>
+//     );
+//   }
+
+
+const router = createBrowserRouter([
+    {
+        path: "/eirik64/manganato_redesign/",
+        element: <App />,
+    },
+    {
+        path: "/eirik64/manganato_redesign/Trending",
+        element: <Trending />,
+    },
+    {
+        path: "/eirik64/manganato_redesign/chapter",
+        element: <Chapter />,
+    },
+    {
+        path: "/eirik64/manganato_redesign/Bookdesc",
+        element: <Bookdesc />,
+    },
+]);
 
 function App() {
     return (
@@ -47,7 +69,7 @@ function App() {
             <div className="body">
                 <div className="Top_Chapters_Box">
                     <div className="Top_Chapters">
-                        <a id="trending_tag" href="/Trending"><h2>Trending this Week</h2></a>
+                        <a id="trending_tag" href="/eirik64/manganato_redesign//Trending"><h2>Trending this Week</h2></a>
                     </div>
                 </div>
 
@@ -82,7 +104,7 @@ function App() {
 
                 <div className="Latest">
                     <div className="latest_updates_box">
-                        <a id="recent_tag" href="/Trending"><h2 id="latest-update-text">Recently
+                        <a id="recent_tag" href="/eirik64/manganato_redesign/Trending"><h2 id="latest-update-text">Recently
                             Updated</h2></a>
                     </div>
 
@@ -97,7 +119,7 @@ function App() {
                     </div>
 
                     <div style={{display:'flex', justifyContent:'center'}}>
-                        <a id={'more_btn'} href={'/Trending'} style={{textDecoration:'none'}}>
+                        <a id={'more_btn'} href={'/eirik64/manganato_redesign/Trending'} style={{textDecoration:'none'}}>
                             <p>More ></p>
                         </a>
                     </div>
@@ -123,5 +145,9 @@ function filterDropDown() {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const foot = ReactDOM.createRoot(document.getElementById("footer"))
-root.render(<Appp /> );
+root.render(
+    <React.StrictMode>
+        <RouterProvider router={router} />
+    </React.StrictMode>
+);
 foot.render(<Footer />);
