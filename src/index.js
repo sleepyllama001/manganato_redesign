@@ -44,19 +44,19 @@ mangaData.forEach((item) => {
 
 const router = createBrowserRouter([
     {
-        path: "/eirik64/manganato_redesign/",
+        path: process.env.PUBLIC_URL,
         element: <App />,
     },
     {
-        path: "/eirik64/manganato_redesign/Trending",
+        path: process.env.PUBLIC_URL + "Trending",
         element: <Trending />,
     },
     {
-        path: "/eirik64/manganato_redesign/chapter",
+        path: process.env.PUBLIC_URL + "chapter",
         element: <Chapter />,
     },
     {
-        path: "/eirik64/manganato_redesign/Bookdesc",
+        path: process.env.PUBLIC_URL + "Bookdesc",
         element: <Bookdesc />,
     },
 ]);
@@ -69,7 +69,7 @@ function App() {
             <div className="body">
                 <div className="Top_Chapters_Box">
                     <div className="Top_Chapters">
-                        <a id="trending_tag" href="/eirik64/manganato_redesign//Trending"><h2>Trending this Week</h2></a>
+                        <a id="trending_tag" href={process.env.PUBLIC_URL + "Trending"}><h2>Trending this Week</h2></a>
                     </div>
                 </div>
 
