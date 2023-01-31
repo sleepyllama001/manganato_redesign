@@ -60,7 +60,7 @@ export default function Menu() {
     return (
         <div className="menu">
             <div className="logo">
-                <a className="horizontal_logo" href="/eirik64/manganato_redesign/">
+                <a className="horizontal_logo" href={process.env.PUBLIC_URL}>
                     <embed className="M" type={"image/png"} src={"img/icons/manganato_logo.png"}/>
                         <div className="Manga"><h1>Manga</h1></div>
                         <div className="Nato"><h1>Nato</h1></div>

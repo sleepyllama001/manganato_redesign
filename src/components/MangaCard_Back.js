@@ -5,7 +5,7 @@ import React from "react";
 export default function Back_Card({title, author, genres, image, alt}) {
     return (
         <button className={"Back-Card-Border"}>
-            <a className={'Card-Content'} href={'/eirik64/manganato_redesign/Bookdesc'} style={{textDecoration:'none', color:'black'}}>
+            <a className={'Card-Content'} href={process.env.PUBLIC_URL + 'Bookdesc'} style={{textDecoration:'none', color:'black'}}>
                 <div className={'cover_back'}>
                     <img className={"covers"} style={{filter:'blur(5px)'}} src={image} alt={alt}/>
                     <div className={'cover_back_text_container'}>

@@ -10,14 +10,14 @@ export default function MangaCard({title, alt, chapters, image, genres, index, a
         <button className={"Manga_Card_Border"} onClick={() => Flip(index)}>
             <div className={'flip_card_inner'}>
                 <div className={'flip_card_front'}>
-                    <a href={'/eirik64/manganato_redesign/Bookdesc'}><img className={"covers"} src={image} alt={alt}/></a>
+                    <a href={process.env.PUBLIC_URL + 'Bookdesc'}><img className={"covers"} src={image} alt={alt}/></a>
                     <div className="manga_title_chapters">
-                        <a className={'title'} href={'/eirik64/manganato_redesign/Bookdesc'} style={{color:'black'}}><h2>{title}</h2></a>
-                        <a className={'chapter'} href={'/eirik64/manganato_redesign/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[0]}</p></a>
-                        <a className={'chapter'} href={'/eirik64/manganato_redesign/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[1]}</p></a>
-                        <a className={'chapter'} href={'/eirik64/manganato_redesign/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[2]}</p></a>
-                        <a className={'chapter'} href={'/eirik64/manganato_redesign/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[3]}</p></a>
-                        <a className={'chapter'} href={'/eirik64/manganato_redesign/chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[4]}</p></a>
+                        <a className={'title'} href={process.env.PUBLIC_URL + 'Bookdesc'} style={{color:'black'}}><h2>{title}</h2></a>
+                        <a className={'chapter'} href={process.env.PUBLIC_URL + 'chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[0]}</p></a>
+                        <a className={'chapter'} href={process.env.PUBLIC_URL + 'chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[1]}</p></a>
+                        <a className={'chapter'} href={process.env.PUBLIC_URL + 'chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[2]}</p></a>
+                        <a className={'chapter'} href={process.env.PUBLIC_URL + 'chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[3]}</p></a>
+                        <a className={'chapter'} href={process.env.PUBLIC_URL + 'chapter'} style={{textDecoration:'none', color:'black'}}><p>{chapters[4]}</p></a>
                     </div>
                 </div>
 

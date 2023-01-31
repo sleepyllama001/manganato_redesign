@@ -104,7 +104,7 @@ function App() {
 
                 <div className="Latest">
                     <div className="latest_updates_box">
-                        <a id="recent_tag" href="/eirik64/manganato_redesign/Trending"><h2 id="latest-update-text">Recently
+                        <a id="recent_tag" href={process.env.PUBLIC_URL + "Trending"}><h2 id="latest-update-text">Recently
                             Updated</h2></a>
                     </div>
 
@@ -119,7 +119,7 @@ function App() {
                     </div>
 
                     <div style={{display:'flex', justifyContent:'center'}}>
-                        <a id={'more_btn'} href={'/eirik64/manganato_redesign/Trending'} style={{textDecoration:'none'}}>
+                        <a id={'more_btn'} href={process.env.PUBLIC_URL + 'Trending'} style={{textDecoration:'none'}}>
                             <p>More ></p>
                         </a>
                     </div>
