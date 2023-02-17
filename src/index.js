@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom/client";
-import React from "react";
-import {HashRouter, Routes, Route, RouterProvider, createBrowserRouter} from "react-router-dom";
+import React, {Component} from "react";
+import {HashRouter, Routes, Route, RouterProvider, createBrowserRouter, BrowserRouter, Link} from "react-router-dom";
 
 import "./index.css"
 
@@ -27,17 +27,52 @@ mangaData.forEach((item) => {
 });
 /* ############################################################## */
 
-// export default function Appp() {
+export default function Appp() {
+    return (
+      <HashRouter>
+        <Link to='/'>a</Link>
+        <Link to="/Trending">b</Link>
+        <Routes>
+           
+            {/* <Route index Component={<App />} />
+            <Route path="/manganato_redesign/App" Component={<App />} />
+            <Route path="/manganato_redesign/chapter" Component={<Chapter />} />
+            <Route path="/manganato_redesign/Bookdesc" Component={<Bookdesc/>} />
+            <Route path="/manganato_redesign/Trending" Component={<Trending/>} /> */}
+            
+            <Route path="/" element={<Chapter />} />
+            {/* <Route exact path="/chapter" element={<Chapter />} /> */}
+            {/* <Route path="/eirik64/manganato_redesignBookdesc" element={<Bookdesc/>} /> */}
+            <Route path="/trending" element={<Trending/>} />
+            
+           
+        </Routes>
+      </HashRouter>
+     ///Users/robby/cs1300/ghpages_manga/manganato_redesign/src/index.js
+    );
+  }
+
+  /*BELOW WORKS KINDA KEEP FOR NOW */
+
+//   export default function Appp() {
 //     return (
-//       <HashRouter>
+//       <BrowserRouter>
 //         <Routes>
+           
+//             {/* <Route index Component={<App />} />
+//             <Route path="/manganato_redesign/App" Component={<App />} />
+//             <Route path="/manganato_redesign/chapter" Component={<Chapter />} />
+//             <Route path="/manganato_redesign/Bookdesc" Component={<Bookdesc/>} />
+//             <Route path="/manganato_redesign/Trending" Component={<Trending/>} /> */}
 //             <Route index element={<App />} />
-//             <Route path="/manganato_redesign/App" element={<App />} />
-//             <Route path="/manganato_redesign/chapter" element={<Chapter />} />
-//             <Route path="/manganato_redesign/Bookdesc" element={<Bookdesc/>} />
-//             <Route path="/manganato_redesign/Trending" element={<Trending/>} />
+//             <Route path="/eirik64/manganato_redesign" element={<App />} />
+//             <Route path="chapter" element={<Chapter />} />
+//             <Route path="/eirik64/manganato_redesignBookdesc" element={<Bookdesc/>} />
+//             <Route path="/eirik64/manganato_redesign/Trending" element={<Trending/>} />
+           
 //         </Routes>
-//       </HashRouter>
+//       </BrowserRouter>
+     
 //     );
 //   }
 
@@ -69,7 +104,7 @@ function App() {
             <div className="body">
                 <div className="Top_Chapters_Box">
                     <div className="Top_Chapters">
-                        <a id="trending_tag" href={process.env.PUBLIC_URL + "Trending"}><h2>Trending this Week</h2></a>
+                        <a id="trending_tag" href={process.env.PUBLIC_URL + "/Trending"}><h2>Trending this Week</h2></a>
                     </div>
                 </div>
 
@@ -93,18 +128,18 @@ function App() {
                         </button>
                     </div>
 
-                    {/*<div id={'filter_options'}>*/}
+                    <div id={'filter_options'}>
                         <div className={'filters'} style={{display:'none', flexDirection:'row', flexWrap:'wrap'}}>
                             {genres.map((item, _) => (
                                 <GenreButton genre={item.genre} />
                             ))}
                         </div>
-                    {/*</div>*/}
+                    </div>
                 </div>
 
                 <div className="Latest">
                     <div className="latest_updates_box">
-                        <a id="recent_tag" href={process.env.PUBLIC_URL + "Trending"}><h2 id="latest-update-text">Recently
+                        <a id="recent_tag" href={process.env.PUBLIC_URL + "/Trending"}><h2 id="latest-update-text">Recently
                             Updated</h2></a>
                     </div>
 
@@ -119,7 +154,7 @@ function App() {
                     </div>
 
                     <div style={{display:'flex', justifyContent:'center'}}>
-                        <a id={'more_btn'} href={process.env.PUBLIC_URL + 'Trending'} style={{textDecoration:'none'}}>
+                        <a id={'more_btn'} href={process.env.PUBLIC_URL + '/Trending'} style={{textDecoration:'none'}}>
                             <p>More ></p>
                         </a>
                     </div>
@@ -144,10 +179,11 @@ function filterDropDown() {
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const foot = ReactDOM.createRoot(document.getElementById("footer"))
+const foot = ReactDOM.createRoot(document.getElementById("footer"));
 // root.render(
 //     <React.StrictMode>
 //         <RouterProvider router={router} />
 //     </React.StrictMode>
 // );
+root.render(<Appp />);
 foot.render(<Footer />);

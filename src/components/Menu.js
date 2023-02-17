@@ -71,8 +71,8 @@ export default function Menu() {
                 <div className="border_box">
                     <ul className="horizontal">
                         <li key={'0'}><a id="Home" href={process.env.PUBLIC_URL}>Home</a></li>
-                        <li key={'1'}><a id="Recent" href={process.env.PUBLIC_URL + "Trending"}>Recently Updated</a></li>
-                        <li key={'2'}><a id="Trending" href={process.env.PUBLIC_URL + "Trending"}>Trending</a></li>
+                        <li key={'1'}><a id="Recent" href={process.env.PUBLIC_URL + "/Trending"}>Recently Updated</a></li>
+                        <li key={'2'}><a id="Trending" href={process.env.PUBLIC_URL + "/Trending"}>Trending</a></li>
                     </ul>
                 </div>
             </div>
